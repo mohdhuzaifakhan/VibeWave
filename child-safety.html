@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Safety Standards - VibeWave</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF5533',
+                        dark: '#0D0D14',
+                        safety: '#00C9A7',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0D0D14;
+            color: white;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #FF5533 0%, #FF8866 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .safety-gradient {
+            background: linear-gradient(135deg, #00C9A7 0%, #00DFC0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass py-4 px-6 md:px-12 flex justify-between items-center">
+        <a href="index.html" class="flex items-center gap-3">
+            <img src="assets/logo.png" alt="VibeWave Logo" class="h-8 w-8">
+            <span class="text-xl font-bold tracking-tight">Vibe<span class="text-primary">Wave</span></span>
+        </a>
+        <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Back to Home</a>
+    </nav>
+
+    <main class="pt-32 pb-20 px-6 max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gradient">Child Safety Standards</h1>
+        <p class="text-gray-400 mb-10">Last Updated: May 16, 2026</p>
+        
+        <div class="space-y-12 text-gray-400 leading-relaxed">
+            <section class="glass p-8 rounded-3xl border-l-4 border-safety">
+                <h2 class="text-2xl font-bold text-white mb-4">Our Commitment</h2>
+                <p>VibeWave takes the safety of children on our platform with the utmost seriousness. We are committed to keeping our community free of child sexual abuse and exploitation (CSAE). We comply with the Google Play Child Safety Standards policy and work continuously to ensure a safe environment for all users.</p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-white mb-4">1. Zero Tolerance Policy</h2>
+                <p>VibeWave has a zero-tolerance policy regarding child sexual abuse material (CSAM) and exploitation. We strictly prohibit:</p>
+                <ul class="list-disc pl-6 space-y-2 mt-4">
+                    <li>The creation, sharing, or distribution of CSAM.</li>
+                    <li>Any form of grooming or predatory behavior targeting minors.</li>
+                    <li>Content that promotes or facilitates child exploitation.</li>
+                </ul>
+                <p class="mt-4">Any account found to be engaging in such activities will be immediately and permanently banned, and we will report all relevant information to the National Center for Missing & Exploited Children (NCMEC) and appropriate law enforcement authorities.</p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-white mb-4">2. Reporting Mechanism</h2>
+                <p>We provide multiple ways for users to report child safety concerns:</p>
+                <div class="grid md:grid-cols-2 gap-6 mt-6">
+                    <div class="glass p-6 rounded-2xl">
+                        <h3 class="text-lg font-semibold text-white mb-2">In-App Reporting</h3>
+                        <p class="text-sm">Use the "Report" button on any user profile or message to flag content for child safety review. Reports are prioritized for immediate investigation.</p>
+                    </div>
+                    <div class="glass p-6 rounded-2xl">
+                        <h3 class="text-lg font-semibold text-white mb-2">Web Feedback</h3>
+                        <p class="text-sm">If you encounter child safety issues outside the app, please use our contact form or email our dedicated safety team directly.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-white mb-4">3. Addressing CSAM</h2>
+                <p>VibeWave utilizes a combination of automated technology and human moderation to identify and remove prohibited content. When CSAM is identified:</p>
+                <ul class="list-disc pl-6 space-y-2 mt-4">
+                    <li>The content is removed immediately.</li>
+                    <li>The account is terminated.</li>
+                    <li>The material is preserved and reported to NCMEC's CyberTipline.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-white mb-4">4. Legal Compliance</h2>
+                <p>VibeWave complies with all applicable child safety laws, including the Children's Online Privacy Protection Act (COPPA). We do not knowingly collect information from children under the age of 18 (or the age of majority in your jurisdiction).</p>
+            </section>
+
+            <section class="glass p-8 rounded-3xl border-l-4 border-primary">
+                <h2 class="text-2xl font-bold text-white mb-4">5. Child Safety Point of Contact</h2>
+                <p>If you have questions, concerns, or need to report a child safety issue, please contact our dedicated Child Safety Officer:</p>
+                <div class="mt-6">
+                    <p class="text-white font-semibold">Email:</p>
+                    <a href="mailto:safety@vibewave.app" class="text-primary text-xl font-bold">safety@vibewave.app</a>
+                </div>
+                <p class="mt-4 text-sm italic text-gray-500">Note: This email is strictly for child safety and exploitation reports. For general support, please use our help center.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="py-10 border-t border-white/5 text-center text-gray-600 text-sm">
+        <p>© 2026 VibeWave. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
