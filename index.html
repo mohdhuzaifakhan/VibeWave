@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeWave - Discover & Connect Instantly</title>
+    <meta name="description" content="VibeWave is a professional, interest-based social discovery app designed to connect you with like-minded people physically nearby.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF5533',
+                        success: '#00C9A7',
+                        warning: '#F5A623',
+                        dark: '#0D0D14',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0D0D14;
+            color: white;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(255, 85, 51, 0.15) 0%, rgba(13, 13, 20, 0) 70%);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #FF5533 0%, #FF8866 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 glass py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <img src="assets/logo.png" alt="VibeWave Logo" class="h-10 w-10">
+            <span class="text-2xl font-bold tracking-tight">Vibe<span class="text-primary">Wave</span></span>
+        </div>
+        <div class="hidden md:flex gap-8 font-medium">
+            <a href="#features" class="hover:text-primary transition-colors">Features</a>
+            <a href="#radar" class="hover:text-primary transition-colors">Radar</a>
+            <a href="#proximity" class="hover:text-primary transition-colors">Proximity</a>
+            <a href="privacy.html" class="hover:text-primary transition-colors">Privacy</a>
+            <a href="terms.html" class="hover:text-primary transition-colors">Terms</a>
+        </div>
+        <a href="#" class="bg-primary hover:bg-orange-600 px-6 py-2 rounded-full font-semibold transition-all transform hover:scale-105">Download</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex flex-col justify-center items-center pt-24 px-6 text-center hero-gradient">
+        <div class="max-w-4xl z-10">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                Connect with People <br> <span class="text-gradient">Around You</span> Instantly
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+                Discover like-minded people nearby for coffee, business, study, or gaming. Real-time discovery meets physical proximity.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+                <a href="#" class="bg-primary hover:bg-orange-600 px-8 py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.5 12c0 3.037-2.463 5.5-5.5 5.5s-5.5-2.463-5.5-5.5 2.463-5.5 5.5-5.5 5.5 2.463 5.5 5.5zm-5.5 4.5c2.481 0 4.5-2.019 4.5-4.5s-2.019-4.5-4.5-4.5-4.5 2.019-4.5 4.5 2.019 4.5 4.5 4.5zm11.5-4.5c0 5.8-4.7 10.5-10.5 10.5s-10.5-4.7-10.5-10.5 4.7-10.5 10.5-10.5 10.5 4.7 10.5 10.5zm-1.5 0c0-4.962-4.038-9-9-9s-9 4.038-9 9 4.038 9 9 9 9-4.038 9-9z"/></svg>
+                    App Store
+                </a>
+                <a href="#" class="bg-white/10 hover:bg-white/20 border border-white/20 px-8 py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M3 20.5v-17l14.5 8.5-14.5 8.5zm1.5-13.883v10.766l9.171-5.383-9.171-5.383z"/></svg>
+                    Google Play
+                </a>
+            </div>
+        </div>
+        
+        <div class="relative w-full max-w-lg mx-auto animate-float">
+            <div class="absolute -inset-10 bg-primary/20 blur-3xl rounded-full"></div>
+            <img src="assets/hero.png" alt="VibeWave App Mockup" class="relative z-10 rounded-[3rem] shadow-2xl border-4 border-white/10">
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 px-6 border-y border-white/5 bg-white/[0.02]">
+        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+            <div>
+                <h3 class="text-4xl font-bold text-primary mb-2">10k+</h3>
+                <p class="text-gray-400">Active Users</p>
+            </div>
+            <div>
+                <h3 class="text-4xl font-bold text-primary mb-2">50k+</h3>
+                <p class="text-gray-400">Waves Sent</p>
+            </div>
+            <div>
+                <h3 class="text-4xl font-bold text-primary mb-2">20km</h3>
+                <p class="text-gray-400">Discovery Range</p>
+            </div>
+            <div>
+                <h3 class="text-4xl font-bold text-primary mb-2">100%</h3>
+                <p class="text-gray-400">Ephemeral Privacy</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section id="features" class="py-32 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Reinventing Social <span class="text-primary">Discovery</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">VibeWave isn't just another social app. It's a real-world connection engine powered by your interests and location.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Radar -->
+                <div class="glass p-10 rounded-3xl hover:border-primary/50 transition-all group">
+                    <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-all">
+                        <svg class="w-8 h-8 text-primary group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Real-Time Radar</h3>
+                    <p class="text-gray-400">Scan your surroundings and see active users sharing your interests in real-time. From 100m to 20km.</p>
+                </div>
+
+                <!-- Waves -->
+                <div class="glass p-10 rounded-3xl hover:border-primary/50 transition-all group">
+                    <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-all">
+                        <svg class="w-8 h-8 text-primary group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.757m1.513-5.703a4 4 0 11-5.656 5.656M17.657 4.343a4 4 0 10-5.656 5.656L10 17.657l-4.95-4.95a7.002 7.002 0 01-9.9 9.9 7.002 7.002 0 019.9-9.9L10 17.657l4.95 4.95a7.002 7.002 0 019.9-9.9z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Sending Waves</h3>
+                    <p class="text-gray-400">Expression interest with a single tap. A "Wave" is a friendly, low-pressure way to start a connection.</p>
+                </div>
+
+                <!-- Matching -->
+                <div class="glass p-10 rounded-3xl hover:border-primary/50 transition-all group">
+                    <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-all">
+                        <svg class="w-8 h-8 text-primary group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Mutual Matching</h3>
+                    <p class="text-gray-400">Matches only happen when interest is mutual. Ensure every conversation is wanted and respected.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Radar Detail Section -->
+    <section id="radar" class="py-32 px-6 bg-white/[0.01]">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="flex-1">
+                <div class="inline-block px-4 py-1 rounded-full bg-primary/10 text-primary font-semibold mb-6">LIVE SCANNING</div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-8">The Heart of Discovery: <br><span class="text-primary">The Radar</span></h2>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <div class="mt-1 w-6 h-6 rounded-full bg-success/20 flex items-center justify-center text-success">✓</div>
+                        <div>
+                            <h4 class="text-xl font-semibold">Interest Filtering</h4>
+                            <p class="text-gray-400">Switch between Coffee, Business, Study, or Gaming modes.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="mt-1 w-6 h-6 rounded-full bg-success/20 flex items-center justify-center text-success">✓</div>
+                        <div>
+                            <h4 class="text-xl font-semibold">Location Awareness</h4>
+                            <p class="text-gray-400">High-precision GPS scanning shows exactly who is active around you.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="mt-1 w-6 h-6 rounded-full bg-success/20 flex items-center justify-center text-success">✓</div>
+                        <div>
+                            <h4 class="text-xl font-semibold">Custom Range</h4>
+                            <p class="text-gray-400">You control the visibility. Scan from 100 meters to 20 kilometers.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-1 relative">
+                <div class="absolute -inset-20 bg-primary/10 blur-3xl rounded-full"></div>
+                <div class="relative glass p-4 rounded-[2.5rem]">
+                    <!-- Radar Animation Placeholder -->
+                    <div class="aspect-square rounded-[2rem] bg-dark flex items-center justify-center overflow-hidden">
+                        <div class="relative w-full h-full">
+                            <!-- Radar Circles -->
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-full h-full border border-primary/20 rounded-full animate-pulse"></div>
+                                <div class="absolute w-[70%] h-[70%] border border-primary/20 rounded-full animate-pulse-slow"></div>
+                                <div class="absolute w-[40%] h-[40%] border border-primary/20 rounded-full animate-pulse"></div>
+                                <div class="absolute w-4 h-4 bg-primary rounded-full shadow-[0_0_20px_#FF5533]"></div>
+                            </div>
+                            <!-- Radar Hand -->
+                            <div class="absolute top-1/2 left-1/2 w-1/2 h-[2px] bg-gradient-to-r from-transparent to-primary origin-left animate-[spin_4s_linear_infinite]"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proximity Guard -->
+    <section id="proximity" class="py-32 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Privacy & Proximity: <br><span class="text-warning">The Proximity Guard</span></h2>
+            <p class="text-xl text-gray-400 mb-12">
+                Connections on VibeWave are designed to be local and ephemeral. Stay in range to keep the conversation alive.
+            </p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass p-8 rounded-2xl text-left border-l-4 border-warning">
+                    <h4 class="text-xl font-bold mb-4">Range-Based Chats</h4>
+                    <p class="text-gray-400 text-sm">Chats are active as long as you stay within the discovery range of each other. Keep it real, keep it local.</p>
+                </div>
+                <div class="glass p-8 rounded-2xl text-left border-l-4 border-warning">
+                    <h4 class="text-xl font-bold mb-4">1-Hour Grace Period</h4>
+                    <p class="text-gray-400 text-sm">Move out of range? You have 60 minutes to wrap up or meet up before the match naturally expires.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-32 px-6">
+        <div class="max-w-5xl mx-auto bg-gradient-to-br from-primary to-orange-700 rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 bg-black/10 rounded-full blur-3xl -ml-32 -mb-32"></div>
+            
+            <h2 class="text-4xl md:text-6xl font-bold mb-8">Ready to Wave?</h2>
+            <p class="text-xl text-white/80 mb-12 max-w-2xl mx-auto">
+                Join thousands of users discovering meaningful connections in their immediate surroundings.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="#" class="bg-white text-primary px-10 py-5 rounded-2xl font-bold text-xl hover:bg-gray-100 transition-all shadow-xl">Get for iOS</a>
+                <a href="#" class="bg-dark text-white px-10 py-5 rounded-2xl font-bold text-xl hover:bg-gray-900 transition-all shadow-xl">Get for Android</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 px-6 border-t border-white/5">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+            <div class="max-w-xs">
+                <div class="flex items-center gap-3 mb-6">
+                    <img src="assets/logo.png" alt="VibeWave Logo" class="h-8 w-8">
+                    <span class="text-xl font-bold tracking-tight">Vibe<span class="text-primary">Wave</span></span>
+                </div>
+                <p class="text-gray-500 text-sm">
+                    Discover and connect with people who share your interests, physically nearby. Real-world connections, instantly.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 gap-16">
+                <div>
+                    <h5 class="font-bold mb-6">Product</h5>
+                    <ul class="space-y-4 text-gray-500 text-sm">
+                        <li><a href="#features" class="hover:text-primary transition-colors">Features</a></li>
+                        <li><a href="#radar" class="hover:text-primary transition-colors">Radar</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Download</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Legal</h5>
+                    <ul class="space-y-4 text-gray-500 text-sm">
+                        <li><a href="privacy.html" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-primary transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-20 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-gray-500 text-xs">
+            <p>© 2026 VibeWave. Built with ❤️ for real-world connections.</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-primary">Twitter</a>
+                <a href="#" class="hover:text-primary">Instagram</a>
+                <a href="#" class="hover:text-primary">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll effect for navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-3', 'bg-dark/80');
+                nav.classList.remove('py-4', 'bg-transparent');
+            } else {
+                nav.classList.add('py-4', 'bg-transparent');
+                nav.classList.remove('py-3', 'bg-dark/80');
+            }
+        });
+    </script>
+</body>
+</html>

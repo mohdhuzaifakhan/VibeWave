@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - VibeWave</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF5533',
+                        dark: '#0D0D14',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0D0D14;
+            color: white;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #FF5533 0%, #FF8866 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass py-4 px-6 md:px-12 flex justify-between items-center">
+        <a href="index.html" class="flex items-center gap-3">
+            <img src="assets/logo.png" alt="VibeWave Logo" class="h-8 w-8">
+            <span class="text-xl font-bold tracking-tight">Vibe<span class="text-primary">Wave</span></span>
+        </a>
+        <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Back to Home</a>
+    </nav>
+
+    <main class="pt-32 pb-20 px-6 max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold mb-10 text-gradient">Privacy Policy</h1>
+        
+        <div class="space-y-12 text-gray-400 leading-relaxed">
+            <section>
+                <h2 class="text-2xl font-bold text-white mb-4">1. Introduction</h2>
+                <p>Welcome to VibeWave. We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, and safeguard your data when you use our mobile application and website.</p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-white mb-4">2. Information We Collect</h2>
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="text-lg font-semibold text-white mb-2">Location Data</h3>
+                        <p>VibeWave is a proximity-based social app. We collect high-precision GPS data to enable the "Radar" feature. This data is used to show you other users nearby and to show your profile to others based on your discovery settings.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-white mb-2">Profile Information</h3>
+                        <p>We collect information you provide when creating a profile, including your name, interests, and profile pictures. This information is visible to other users within your discovery range.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-white mb-2">Interest Data</h3>
+                        <p>We collect your selected interests to help filter and match you with like-minded individuals in your vicinity.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-white mb-4">3. How We Use Your Information</h2>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>To provide real-time social discovery via the Radar.</li>
+                    <li>To facilitate "Waves" and mutual matching.</li>
+                    <li>To operate the ephemeral chat system.</li>
+                    <li>To enforce the Proximity Guard (range-based interactions).</li>
+                    <li>To improve and optimize the user experience.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-white mb-4">4. Ephemeral Messaging & Privacy</h2>
+                <p>Chat rooms on VibeWave are ephemeral. Messages and chat rooms exist only as long as both users remain within discovery range (with a 1-hour grace period). Once the match expires, the chat history is permanently deleted from our active servers.</p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-white mb-4">5. Your Controls</h2>
+                <p>You have full control over your visibility on VibeWave:</p>
+                <ul class="list-disc pl-6 space-y-2 mt-4">
+                    <li><strong>Social Energy:</strong> Set your status to Open, Busy, or Private (Invisible).</li>
+                    <li><strong>Discovery Range:</strong> Adjust your search radius from 100m to 20km.</li>
+                    <li><strong>Account Deletion:</strong> You can delete your account at any time, which will remove all your data from our systems.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-white mb-4">6. Security</h2>
+                <p>We implement industry-standard security measures to protect your data. However, no method of transmission over the internet is 100% secure. We encourage users to be mindful of the information they share on their public profiles.</p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-white mb-4">7. Contact Us</h2>
+                <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:privacy@vibewave.app" class="text-primary">privacy@vibewave.app</a>.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="py-10 border-t border-white/5 text-center text-gray-600 text-sm">
+        <p>© 2026 VibeWave. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

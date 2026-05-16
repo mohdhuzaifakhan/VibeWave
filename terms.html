@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - VibeWave</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF5533',
+                        dark: '#0D0D14',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0D0D14;
+            color: white;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #FF5533 0%, #FF8866 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass py-4 px-6 md:px-12 flex justify-between items-center">
+        <a href="index.html" class="flex items-center gap-3">
+            <img src="assets/logo.png" alt="VibeWave Logo" class="h-8 w-8">
+            <span class="text-xl font-bold tracking-tight">Vibe<span class="text-primary">Wave</span></span>
+        </a>
+        <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Back to Home</a>
+    </nav>
+
+    <main class="pt-32 pb-20 px-6 max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold mb-10 text-gradient">Terms of Service</h1>
+        
+        <div class="space-y-12 text-gray-400 leading-relaxed">
+            <section>
+                <h2 class="text-2xl font-bold text-white mb-4">1. Acceptance of Terms</h2>
+                <p>By downloading or using the VibeWave application, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the service.</p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-white mb-4">2. Eligibility</h2>
+                <p>You must be at least 18 years old to use VibeWave. By using the service, you represent and warrant that you have the right, authority, and capacity to enter into this agreement.</p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-white mb-4">3. User Conduct</h2>
+                <p>VibeWave is a platform for real-world social discovery. You agree to:</p>
+                <ul class="list-disc pl-6 space-y-2 mt-4">
+                    <li>Treat all users with respect.</li>
+                    <li>Not use the app for harassment, spamming, or illegal activities.</li>
+                    <li>Provide accurate information on your profile.</li>
+                    <li>Not impersonate any person or entity.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-white mb-4">4. Proximity & Real-World Interaction</h2>
+                <p>VibeWave facilitates connections between people in physical proximity. You acknowledge that you are solely responsible for your interactions with other users, both online and offline. VibeWave does not conduct criminal background checks on its users.</p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-white mb-4">5. Account Termination</h2>
+                <p>We reserve the right to terminate or suspend your account at our sole discretion, without notice, for conduct that we believe violates these Terms or is harmful to other users of the service.</p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-white mb-4">6. Limitation of Liability</h2>
+                <p>To the maximum extent permitted by law, VibeWave shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly.</p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-white mb-4">7. Changes to Terms</h2>
+                <p>We may modify these Terms at any time. We will notify you of any changes by posting the new Terms on this page. Your continued use of the service after such changes constitutes your acceptance of the new Terms.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="py-10 border-t border-white/5 text-center text-gray-600 text-sm">
+        <p>© 2026 VibeWave. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
